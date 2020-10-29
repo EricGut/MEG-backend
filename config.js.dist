@@ -1,0 +1,4 @@
+module.exports = {
+    MONGOURI: 'your uri from mongodb',
+    SECRET_KEY: 'random text for secret key <-- actually, this is already a secret key'
+}
