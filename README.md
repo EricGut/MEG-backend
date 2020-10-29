@@ -1,6 +1,6 @@
 # Backend MEG (MongoDB, Express, GraphQl)
 
-I create a Backend using MEG where you can register users and login with them.
+I create a Backend using MEG (Apollo) where you can register users and login with them.
 Each user creates it's own token for other propouses.
 
 ## Install
@@ -37,7 +37,7 @@ Each user creates it's own token for other propouses.
 
 ## How it works
 
-- To register or login a user you need to go to http://localhost:5500/.
+- To register or login a user you need to go to http://localhost:5500/
 - If it shows nothing, you need to grant access on chrome localhost cookies
 
 ### Register
