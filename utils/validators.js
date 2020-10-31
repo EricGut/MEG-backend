@@ -1,5 +1,5 @@
 module.exports.validateRegisterUser = (name, lastName, username, email, password, repeatPassword) => {
-    errors = {};
+    const errors = {};
     if (name.trim() === '') {
         errors.name = 'name field must be not empty'
     }
@@ -30,7 +30,7 @@ module.exports.validateRegisterUser = (name, lastName, username, email, password
 }
 
 module.exports.validateLoginUser = (username, password) => {
-    errors = {};
+    const errors = {};
     if (username.trim() === '') {
         errors.username = 'username field must be not empty'
     }
