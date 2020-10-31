@@ -1,20 +1,11 @@
 const User = require('../../models/User');
 
-const jwt = require('jsonwebtoken');
-const { SECRET_KEY } = require('../../config');
-
 const bcrypt = require('bcryptjs');
+const generateToken = require('../../utils/generate-token');
 
 const { UserInputError } = require('apollo-server');
 const { validateRegisterUser, validateLoginUser } = require('../../utils/validators');
 
-function generateToken(user) {
-    return jwt.sign({
-        id: user.id,
-        username: user.username,
-        email: user.email
-    }, SECRET_KEY, { expiresIn: '2h' })
-}
 
 module.exports = {
     Query: {
@@ -27,6 +18,7 @@ module.exports = {
             }
         }
     },
+
     Mutation: {
         async register(_, { registerUser: { name, lastName, username, email, password, repeatPassword } }) {
             const { errors, valid } = validateRegisterUser(name, lastName, username, email, password, repeatPassword);
