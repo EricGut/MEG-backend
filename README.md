@@ -1,13 +1,13 @@
-# Backend MEG (MongoDB, Express, GraphQl)
+# Backend MENG (MongoDB, Express, Node, GraphQl)
 
-I create a Backend using MEG (Apollo) where you can register users and login with them.
+I create a Backend using MENG (Apollo) where you can register users and login with them.
 Each user creates it's own token for other propouses.
 
 ## Install
 
 ```bash
-    git clone https://github.com/EricGut/MEG-backend
-    cd MEG-backend
+    git clone https://github.com/EricGut/MENG-backend
+    cd MENG-backend
     npm install
 ```
 
